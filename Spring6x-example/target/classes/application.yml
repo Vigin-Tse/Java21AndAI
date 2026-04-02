@@ -26,7 +26,7 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
     username: root
     password: A123@bpg
-    url: jdbc:mysql://10.10.22.173:3306/fault_data_samples?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://10.10.22.173:3306/om_dpi?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&allowMultiQueries=true&allowPublicKeyRetrieval=true
     druid:
       # 初始化大小，最小，最大，超时链接，空闲时间，生产时间，pscache
       initialSize: 5
@@ -50,6 +50,10 @@ spring:
 #      username: dsri
 #      password: 123456
 
-
+# mybatis-plus 配置
+mybatis-plus:
+  configuration:
+    # MyBatis 配置
+    map-underscore-to-camel-case: true
 
 

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: simple-ai-alibaba-demp
+  ai:
+    openai:
+      api-key: sk-667ed99ec23448a881118687c18f98e3
+      base-url: https://dashscope.aliyuncs.com/compatible-mode
+      chat:
+        options:
+          model: qwen3-max
+
+server:
+  port: 8080
